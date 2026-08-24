@@ -17,10 +17,18 @@ dra-inara-retrato.jpg   1600x1200 — original IMG_4739.
      Capa, ao lado do nome. Retrato frontal na mesa de atendimento.
      .hero__portrait .frame { --ar:4/5; --foco:50% 20% }
 
-dra-inara-sobre.jpg     1800x1350 — original IMG_4702.
+dra-inara-sobre.jpg     1400x1865 — original IMG_4702.
      Seção escura "Sobre a Dra. Inara". De jaleco, junto à estante de
      livros do consultório.
-     .plate--sobre .frame { --ar:3/4; --foco:10% 40% }
+     ESTA É A ÚNICA JÁ RECORTADA NO ARQUIVO, em 3:4, para fechar o
+     enquadramento nela: só reposicionar o --foco deixava a Dra. Inara
+     pequena e jogada para a direita, porque a janela 3:4 mostra apenas
+     56% da largura de uma foto 4:3.
+     Recorte aplicado sobre o original de 5712x4284:
+         x 1021..3549   y 343..3710   (2528 x 3367)
+     Como o arquivo já vem na proporção da janela, o CSS não corta nada:
+     .plate--sobre .frame { --ar:3/4; --foco:50% 50% }
+     Para refazer com outro enquadramento, veja "PARA RECORTAR" abaixo.
 
 exames.jpg              1280x960 — sala de exames VAZIA, sem ela.
      Foto larga que abre a galeria do consultório: lâmpada de fenda,
@@ -62,6 +70,18 @@ Para exportar outra foto da pasta original:
 
 O -Z define o lado maior em pixels. Use 1600 para as janelas pequenas e
 2000 para a foto larga.
+
+
+PARA RECORTAR
+-------------
+As fotos do iPhone são 4:3 deitadas. Numa janela em pé (3:4 ou 4:5) o CSS
+mostra pouco mais da metade da largura, então quem está fora do centro
+fica no canto e pequeno. Nesses casos vale recortar o arquivo.
+
+O jeito mais simples no Mac, sem instalar nada, é o sips — mas atenção:
+o --cropOffset dele conta a partir do recorte CENTRALIZADO, não da borda.
+Para recorte com origem exata, use um script de canvas ou o Preview.app
+(Ferramentas > Ajustar tamanho / seleção).
 
 
 AINDA VALE MELHORAR

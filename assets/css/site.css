@@ -355,7 +355,7 @@ h2 + p, h2 + .lead{ margin-top:1.1rem }
   .sobre{ grid-template-columns:.8fr 1.2fr }
   .plate--sobre{ position:sticky; top:6rem }
 }
-.plate--sobre .frame{ --ar:3/4; --foco:10% 40%; border-color:color-mix(in srgb, #DCBB7C 35%, transparent) }
+.plate--sobre .frame{ --ar:3/4; --foco:50% 50%; border-color:color-mix(in srgb, #DCBB7C 35%, transparent) }
 .section--dark .frame{ background:#332C22 }
 .section--dark .frame.is-missing{
   background:
