@@ -355,7 +355,7 @@ h2 + p, h2 + .lead{ margin-top:1.1rem }
   .sobre{ grid-template-columns:.8fr 1.2fr }
   .plate--sobre{ position:sticky; top:6rem }
 }
-.plate--sobre .frame{ --ar:3/4; --foco:35% 45%; border-color:color-mix(in srgb, #DCBB7C 35%, transparent) }
+.plate--sobre .frame{ --ar:3/4; --foco:10% 40%; border-color:color-mix(in srgb, #DCBB7C 35%, transparent) }
 .section--dark .frame{ background:#332C22 }
 .section--dark .frame.is-missing{
   background:
@@ -433,7 +433,7 @@ h2 + p, h2 + .lead{ margin-top:1.1rem }
    recepcao.jpg → mostra x≈134..693. A placa "Lavezzo & Takigami" começa em
      x≈715 e fica fora do quadro; por isso a legenda é "Entrada". Passar o
      --foco de 28% traz a placa de volta. */
-.frame--exames{ --ar:16/9; --foco:50% 45% }
+.frame--exames{ --ar:16/9; --foco:50% 55% }
 .frame--aparelhos{ --ar:4/5; --foco:50% 45% }
 .frame--lounge{ --ar:4/5; --foco:50% 50% }
 .frame--entrada{ --ar:4/5; --foco:24% 50% }

@@ -17,17 +17,22 @@ dra-inara-retrato.jpg   1600x1200 — original IMG_4739.
      Capa, ao lado do nome. Retrato frontal na mesa de atendimento.
      .hero__portrait .frame { --ar:4/5; --foco:50% 20% }
 
-dra-inara-sobre.jpg     1800x1350 — original IMG_4716.
-     Seção escura "Sobre a Dra. Inara". De jaleco, junto ao refrator,
-     olhando para a câmera.
-     .plate--sobre .frame { --ar:3/4; --foco:35% 45% }
+dra-inara-sobre.jpg     1800x1350 — original IMG_4702.
+     Seção escura "Sobre a Dra. Inara". De jaleco, junto à estante de
+     livros do consultório.
+     .plate--sobre .frame { --ar:3/4; --foco:10% 40% }
 
-exames.jpg              2000x1500 — original IMG_4722.
-     Foto larga que abre a galeria do consultório. Perfil, ajustando o
-     refrator, com a poltrona de exame e a luz da janela.
-     .frame--exames { --ar:16/9; --foco:50% 45% }
-     (o 2º número sobe ou desce o enquadramento; abaixo de 40% a cabeça
-      dela começa a sair do quadro)
+exames.jpg              1280x960 — sala de exames VAZIA, sem ela.
+     Foto larga que abre a galeria do consultório: lâmpada de fenda,
+     autorrefrator e projetor de optotipos à esquerda, mesa de
+     atendimento à direita.
+     .frame--exames { --ar:16/9; --foco:50% 55% }
+     (o 2º número sobe ou desce o enquadramento)
+     Esta veio do lote antigo, o das imagens anexadas na conversa, porque
+     na pasta da sessão de fotos não há nenhuma tomada dessa sala sem
+     ninguém — em todas as 136 a Dra. Inara aparece. É a foto de menor
+     resolução do site e ocupa a maior área, então é a que mais ganharia
+     com uma tomada nova da sala vazia.
 
 aparelhos.jpg           1600x1200 — original IMG_4796.
      Sala dos exames de imagem, com os dois aparelhos e os diplomas.
@@ -61,6 +66,6 @@ O -Z define o lado maior em pixels. Use 1600 para as janelas pequenas e
 
 AINDA VALE MELHORAR
 -------------------
-lounge.jpg e recepcao.jpg são as duas únicas que não vieram dos originais
-da câmera. Se houver fotos da sala de espera nessa mesma sessão, dá para
-substituí-las e nivelar a qualidade da galeria inteira.
+exames.jpg, lounge.jpg e recepcao.jpg vieram do lote antigo, em resolução
+menor que as outras. Uma tomada nova da sala de exames vazia e da sala de
+espera nivelaria a qualidade da galeria inteira.

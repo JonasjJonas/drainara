@@ -67,12 +67,14 @@ preenchido — não precisa caçar no código.
 
 ### Fotos
 - [x] Retrato da Dra. Inara na capa (IMG_4739)
-- [x] Foto dela no consultório, seção "Sobre" (IMG_4716)
-- [x] Galeria do consultório: sala de exames (IMG_4722) e sala de imagem
-      (IMG_4796), ambas dos originais da câmera
+- [x] Foto dela no consultório, seção "Sobre" (IMG_4702)
+- [x] Galeria: sala de exames vazia (lote antigo) e sala de imagem com ela
+      (IMG_4796)
 - [x] Ilustrações removidas a pedido dela (visual mais limpo)
-- [ ] `lounge.jpg` e `recepcao.jpg` ainda são as versões reduzidas que vieram
-      pelo chat — se houver originais da sala de espera, valem a troca
+- [ ] `exames.jpg`, `lounge.jpg` e `recepcao.jpg` são as versões reduzidas que
+      vieram pelo chat. A da sala de exames é a maior da página e a de menor
+      resolução: uma tomada nova da sala vazia resolveria (nas 136 fotos da
+      sessão não há nenhuma sem a Dra. Inara)
 - [ ] Decidir se a foto da recepção pode mostrar a placa "Lavezzo & Takigami"
       — hoje ela está cortada fora do quadro
 
