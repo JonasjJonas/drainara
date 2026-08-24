@@ -66,12 +66,13 @@ preenchido — não precisa caçar no código.
 - [ ] Resposta sobre convênios na seção de dúvidas
 
 ### Fotos
-- [ ] Retrato da Dra. Inara (vertical 4:5)
-- [ ] Foto dela no consultório (vertical 3:4)
-- [x] Fotos da clínica — já no site
+- [x] Retrato da Dra. Inara na capa (IMG_4739)
+- [x] Foto dela no consultório, seção "Sobre" (IMG_4716)
+- [x] Galeria do consultório: sala de exames (IMG_4722) e sala de imagem
+      (IMG_4796), ambas dos originais da câmera
 - [x] Ilustrações removidas a pedido dela (visual mais limpo)
-- [ ] Se existirem, substituir pelos originais da câmera (as atuais vieram
-      reduzidas; ver `assets/img/LEIA-ME.txt`)
+- [ ] `lounge.jpg` e `recepcao.jpg` ainda são as versões reduzidas que vieram
+      pelo chat — se houver originais da sala de espera, valem a troca
 - [ ] Decidir se a foto da recepção pode mostrar a placa "Lavezzo & Takigami"
       — hoje ela está cortada fora do quadro
 

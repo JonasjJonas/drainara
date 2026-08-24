@@ -1,58 +1,66 @@
 IMAGENS DO SITE
 ===============
 
-JÁ ESTÃO AQUI
--------------
+Todas as fotos da Dra. Inara vieram da pasta "Cliente 02- Inara Contin"
+(136 arquivos HEIC de 5712x4284). Escolhi quatro, converti para JPG e
+reduzi para o tamanho em que cada uma aparece.
 
-As ilustrações saíram do site — a Dra. Inara preferiu um visual mais limpo.
-As seções que as usavam agora se apoiam só em tipografia e filete.
-
-consultorio.jpg           1280 x 960 — a sala de exames, original inteira.
-     Entra em toda a largura; o corte é só na altura (16/9 mostra 75% dela,
-     puxado para baixo) para tirar excesso de teto. Aparecem a lâmpada de
-     fenda e o autorrefrator à esquerda e a mesa de consulta à direita —
-     agora isso é conteúdo, não problema.
-     Controle: .frame--consultorio { --ar:16/9; --foco:50% 62% }
-     (o 2º número do --foco desce o enquadramento)
-
-lounge.jpg                1107 x 714 — sala de espera.
-     Controle: .frame--lounge { --ar:4/5; --foco:50% 50% }
-
-recepcao.jpg              1084 x 712 — o mesmo ambiente por outro ângulo.
-     A placa "Lavezzo & Takigami — Oftalmologia | Dermatologia" começa em
-     x≈715 nesta foto; o site mostra x≈134..693, então ela fica fora do
-     quadro, e a legenda é "Entrada" em vez de "Recepção".
-     Controle: .frame--entrada { --ar:4/5; --foco:24% 50% }
-     ATENÇÃO: passar o --foco de 28% traz a placa de volta para dentro.
-     Se essa é a clínica onde a Dra. Inara atende e não há problema em
-     mostrar a marca, dá para usar a foto inteira: troque para
-     { --ar:16/10; --foco:50% 50% } e mude a legenda para "Recepção".
-
-As fotos e a arte vieram das imagens anexadas na conversa, que já são
-versões reduzidas. Se você tiver os ORIGINAIS, é só sobrescrever com o
-mesmo nome — a página melhora sem nenhuma mudança de código, desde que a
-proporção seja parecida. Se mudar muito, reveja os valores de --foco acima.
+O corte NUNCA está no arquivo: quem enquadra é o CSS, pela dupla
+--ar (proporção da janela) e --foco (que pedaço da foto aparece).
+Assim dá para reenquadrar mudando um número, sem reexportar nada.
 
 
-AINDA FALTA
------------
+AS FOTOS
+--------
 
-dra-inara-retrato.jpg    Retrato da Dra. Inara, VERTICAL, proporção 4:5.
-                         Topo da página, ao lado do nome.
-                         Ideal: 1200 x 1500 px, fundo neutro, luz suave.
+dra-inara-retrato.jpg   1600x1200 — original IMG_4739.
+     Capa, ao lado do nome. Retrato frontal na mesa de atendimento.
+     .hero__portrait .frame { --ar:4/5; --foco:50% 20% }
 
-dra-inara-sobre.jpg      Foto dela no consultório, VERTICAL, proporção 3:4.
-                         Seção escura "Sobre a Dra. Inara".
-                         Ideal: 1200 x 1600 px. Pode ser mais informal —
-                         em atendimento, no ambiente do consultório.
+dra-inara-sobre.jpg     1800x1350 — original IMG_4716.
+     Seção escura "Sobre a Dra. Inara". De jaleco, junto ao refrator,
+     olhando para a câmera.
+     .plate--sobre .frame { --ar:3/4; --foco:35% 45% }
 
-Enquanto não chegarem, o site mostra uma etiqueta tracejada no lugar exato,
-com a proporção já reservada. Basta salvar o arquivo com o nome acima: a
-etiqueta some sozinha.
+exames.jpg              2000x1500 — original IMG_4722.
+     Foto larga que abre a galeria do consultório. Perfil, ajustando o
+     refrator, com a poltrona de exame e a luz da janela.
+     .frame--exames { --ar:16/9; --foco:50% 45% }
+     (o 2º número sobe ou desce o enquadramento; abaixo de 40% a cabeça
+      dela começa a sair do quadro)
+
+aparelhos.jpg           1600x1200 — original IMG_4796.
+     Sala dos exames de imagem, com os dois aparelhos e os diplomas.
+     .frame--aparelhos { --ar:4/5; --foco:50% 45% }
+
+lounge.jpg              1107x714 — sala de espera. Veio das imagens
+     anexadas na conversa, em resolução menor que as outras.
+     .frame--lounge { --ar:4/5; --foco:50% 50% }
+
+recepcao.jpg            1084x712 — mesmo ambiente, outro ângulo, também
+     em resolução menor. A placa "Lavezzo & Takigami" começa em x≈715 e
+     fica fora do quadro; por isso a legenda é "Entrada".
+     .frame--entrada { --ar:4/5; --foco:24% 50% }
+     ATENÇÃO: passar o --foco de 28% traz a placa de volta.
 
 
-DICAS DE ARQUIVO
-----------------
-- JPG com qualidade ~82 basta. Tente manter cada foto abaixo de 400 KB.
-- Para redimensionar no Mac, sem instalar nada:
-      sips -Z 1600 foto.jpg --out foto-web.jpg
+PARA TROCAR UMA FOTO
+--------------------
+Salve o arquivo novo com o MESMO nome. Se a proporção for parecida com a
+antiga (as fotos do iPhone são todas 4:3), não precisa mexer em mais nada.
+Se o enquadramento sair torto, ajuste só o --foco daquela regra no
+assets/css/site.css.
+
+Para exportar outra foto da pasta original:
+    sips -s format jpeg -s formatOptions 80 -Z 1800 IMG_XXXX.HEIC \
+         --out assets/img/nome.jpg
+
+O -Z define o lado maior em pixels. Use 1600 para as janelas pequenas e
+2000 para a foto larga.
+
+
+AINDA VALE MELHORAR
+-------------------
+lounge.jpg e recepcao.jpg são as duas únicas que não vieram dos originais
+da câmera. Se houver fotos da sala de espera nessa mesma sessão, dá para
+substituí-las e nivelar a qualidade da galeria inteira.
