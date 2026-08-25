@@ -43,8 +43,11 @@ preenchido — não precisa caçar no código.
 ### Contato
 - [x] WhatsApp / telefone (11) 93045-5259 — os botões "Agendar" e a seção de
       contato abrem a conversa no WhatsApp com mensagem pronta
-- [ ] E-mail
-- [ ] Instagram
+- [x] E-mail: inaraoftalmogia@gmail.com
+- [x] Instagram: [@drainaracontin](https://www.instagram.com/drainaracontin/)
+- [ ] **Conferir a grafia do e-mail.** Está no site exatamente como veio:
+      `inaraoftalmogia@gmail.com`. Repare que falta o "lo" de oftalmo**lo**gia —
+      pode ser o endereço real, mas se for engano o contato se perde calado
 
 ### Consultório
 - [x] Endereço: Rua Maria Figueiredo, 595 — conjunto 83, Paraíso, São Paulo/SP
@@ -57,9 +60,10 @@ preenchido — não precisa caçar no código.
 
 ### Conteúdo clínico
 - [x] Lista de procedimentos — agora é exatamente a que você mandou
-- [ ] "Microscopia": especular ou confocal?
-- [ ] Completar a lista de aparelhos (o "entre outros")
 - [ ] Resposta sobre convênios na seção de dúvidas
+- [ ] O bloco "Aparelhos do consultório" saiu a pedido do cliente. O parágrafo
+      de Oftalmologia ainda cita tomografia de coerência óptica e microscopia;
+      dizer se essa menção fica ou sai também
 
 ### Capa
 - [ ] **Foto de capa em alta resolução.** Hoje a capa usa a `exames.jpg`, de
