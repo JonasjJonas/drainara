@@ -40,7 +40,6 @@
 
     <nav class="nav" aria-label="Navegação principal">
       <a href="#atendimento">Atendimento</a>
-      <a href="#consulta">A consulta</a>
       <a href="#consultorio">Consultório</a>
       <a href="#duvidas">Dúvidas</a>
       <a href="#contato">Contato</a>
@@ -55,7 +54,6 @@
 
   <nav class="nav-mobile" id="nav-mobile" aria-label="Navegação principal (celular)" hidden>
     <a href="#atendimento">Atendimento</a>
-    <a href="#consulta">A consulta</a>
     <a href="#consultorio">Consultório</a>
     <a href="#duvidas">Dúvidas</a>
     <a href="#contato">Contato</a>
@@ -64,50 +62,54 @@
 
 <main id="conteudo">
 
-  <!-- ============================================ HERO -->
+  <!-- ============================================ CAPA -->
   <section class="hero">
+    <div class="hero__foto">
+      <img src="assets/img/exames.jpg" alt="Sala de exames do consultório, com lâmpada de fenda e autorrefrator"
+           fetchpriority="high" decoding="async" width="1280" height="960">
+    </div>
+
     <div class="wrap hero__in">
-      <div class="hero__text">
-        <p class="kicker">Paraíso · São Paulo</p>
-        <h1>Dra. Inara Contin&nbsp;Rassi</h1>
-        <p class="hero__spec">Oftalmologia · Blefaroplastia</p>
-        <p class="lead">
-          Consulta oftalmológica completa, acompanhamento de doenças oculares
-          crônicas e cirurgia de pálpebras, nas indicações funcional e estética.
-          Os exames são feitos no próprio consultório.
-        </p>
+      <p class="kicker">Oftalmologia · Plástica ocular · São&nbsp;Paulo</p>
+      <h1>Dra. Inara Contin&nbsp;Rassi</h1>
+      <p class="lead">
+        Consulta oftalmológica completa, com os exames feitos no próprio
+        consultório, e cirurgia de pálpebras nas indicações funcional e
+        estética.
+      </p>
 
-        <p class="crm">
-          <span><b>CRM</b> 136.284 <span class="gap" data-gap="confirmar a UF do CRM">◇ UF?</span></span>
-          <span><b>RQE</b> 77580</span>
-        </p>
-
-        <div class="actions">
-          <a class="btn" href="https://wa.me/5511930455259?text=Ol%C3%A1%21%20Gostaria%20de%20agendar%20uma%20consulta%20com%20a%20Dra.%20Inara." target="_blank" rel="noopener">Agendar pelo WhatsApp</a>
-          <a class="btn btn--ghost" href="#atendimento">O que eu atendo</a>
-        </div>
+      <div class="actions">
+        <a class="btn btn--claro" href="https://wa.me/5511930455259?text=Ol%C3%A1%21%20Gostaria%20de%20agendar%20uma%20consulta%20com%20a%20Dra.%20Inara." target="_blank" rel="noopener">Agendar pelo WhatsApp</a>
+        <a class="btn btn--contorno" href="#consultorio">Conhecer o consultório</a>
       </div>
 
-      <figure class="plate plate--portrait hero__portrait">
-        <div class="frame" data-missing="Foto da Dra. Inara — retrato vertical, 4:5">
-          <img src="assets/img/dra-inara-retrato.jpg" alt="Dra. Inara Contin Rassi em seu consultório" decoding="async" width="1600" height="1200">
-        </div>
-        <figcaption>Dra. Inara Contin Rassi</figcaption>
-      </figure>
+      <p class="hero__crm">
+        CRM 136.284 <span class="gap" data-gap="confirmar a UF do CRM">◇ UF?</span>
+        <span class="hero__ponto" aria-hidden="true">·</span> RQE 77580
+      </p>
     </div>
   </section>
 
   <!-- ============================================ ATENDIMENTO / DÍPTICO -->
   <section class="section" id="atendimento">
     <div class="wrap">
-      <header class="sec-head">
-        <p class="kicker">Atendimento</p>
-        <h2>Oftalmologia e cirurgia de pálpebras</h2>
-        <p class="lead">
-          Duas áreas de atuação no mesmo consultório: consulta oftalmológica,
-          com exame completo e acompanhamento clínico, e cirurgia de pálpebras.
-        </p>
-      </header>
+      <div class="abre">
+        <header class="sec-head sec-head--flush">
+          <p class="kicker">Atendimento</p>
+          <h2>Oftalmologia e cirurgia de pálpebras</h2>
+          <p class="lead">
+            Duas áreas de atuação no mesmo consultório: consulta oftalmológica,
+            com exame completo e acompanhamento clínico, e cirurgia de pálpebras.
+          </p>
+        </header>
+
+        <figure class="plate abre__foto" data-reveal>
+          <div class="frame frame--retrato">
+            <img src="assets/img/dra-inara-retrato.jpg" alt="Dra. Inara Contin Rassi na mesa de atendimento" decoding="async" width="1600" height="1200">
+          </div>
+          <figcaption>Dra. Inara Contin Rassi</figcaption>
+        </figure>
+      </div>
 
       <div class="frentes">
 
@@ -228,54 +230,6 @@
     </div>
   </section>
 
-  <!-- ============================================ A CONSULTA -->
-  <section class="section" id="consulta">
-    <div class="wrap consulta">
-      <header class="sec-head sec-head--narrow">
-        <p class="kicker">A consulta</p>
-        <h2>Como é a consulta</h2>
-      </header>
-
-      <ol class="passos">
-        <li>
-          <h3>Histórico e queixa</h3>
-          <p>
-            O que incomoda, há quanto tempo e em que situação piora. Também
-            entram no histórico os colírios em uso, cirurgias anteriores,
-            diabetes e doenças de tireoide, casos de glaucoma na família e o
-            tempo diário de tela.
-          </p>
-        </li>
-        <li>
-          <h3>Exame</h3>
-          <p>
-            Acuidade visual, refração, biomicroscopia na lâmpada de fenda e
-            medida da pressão intraocular. Os aparelhos ficam na própria sala,
-            então o exame é feito na mesma visita.
-          </p>
-        </li>
-        <li>
-          <h3>Dilatação da pupila</h3>
-          <p>
-            Necessária para o exame do fundo de olho e para o mapeamento de
-            retina. O colírio leva cerca de 20 minutos para fazer efeito e
-            deixa a visão de perto embaçada e sensível à luz por algumas horas.
-            Nesse período não é seguro dirigir.
-          </p>
-        </li>
-        <li>
-          <h3>Conduta e retorno</h3>
-          <p>
-            Você sai com o diagnóstico, a receita do grau quando for o caso, os
-            exames solicitados e a data do retorno, tudo por escrito. Havendo
-            indicação cirúrgica, riscos, alternativas e preparo são detalhados
-            em uma consulta específica antes de qualquer agendamento.
-          </p>
-        </li>
-      </ol>
-    </div>
-  </section>
-
   <!-- ============================================ CONSULTÓRIO -->
   <section class="section" id="consultorio">
     <div class="wrap">
@@ -289,13 +243,6 @@
       </header>
 
       <div class="galeria">
-        <figure class="plate plate--wide" data-reveal>
-          <div class="frame frame--exames" data-missing="Foto da sala de exames">
-            <img src="assets/img/exames.jpg" alt="Sala de exames com lâmpada de fenda e autorrefrator ao lado da mesa de atendimento" decoding="async" width="1280" height="960">
-          </div>
-          <figcaption>Sala de exames</figcaption>
-        </figure>
-
         <figure class="plate" data-reveal>
           <div class="frame frame--aparelhos" data-missing="Foto da sala de aparelhos">
             <img src="assets/img/aparelhos.jpg" alt="Sala de exames complementares, com dois aparelhos de imagem e os diplomas na parede" decoding="async" width="1600" height="1200">
@@ -333,40 +280,6 @@
           <li><span class="gap" data-gap="completar a lista de aparelhos">◇ falta</span></li>
         </ul>
       </div>
-
-      <!-- Informações práticas -->
-      <dl class="pratico">
-        <div>
-          <dt>Endereço</dt>
-          <dd>
-            <a class="endereco" href="https://www.google.com/maps/search/?api=1&amp;query=Rua+Maria+Figueiredo%2C+595+-+Para%C3%ADso%2C+S%C3%A3o+Paulo+-+SP" target="_blank" rel="noopener">
-              Rua Maria Figueiredo, 595 — conjunto 83<br>
-              Paraíso, São Paulo — SP · 04002-003
-            </a>
-          </dd>
-        </div>
-        <div>
-          <dt>Horários</dt>
-          <dd><span class="gap" data-gap="dias e horários de atendimento">◇ falta</span></dd>
-        </div>
-        <div>
-          <dt>Convênios</dt>
-          <dd><span class="gap" data-gap="lista de convênios ou 'apenas particular'">◇ falta</span></dd>
-        </div>
-        <div>
-          <dt>Estacionamento</dt>
-          <dd><span class="gap" data-gap="tem manobrista? convênio com estacionamento?">◇ falta</span></dd>
-        </div>
-        <div>
-          <dt>Acessibilidade</dt>
-          <dd><span class="gap" data-gap="elevador, acesso para cadeirante, banheiro adaptado">◇ falta</span></dd>
-        </div>
-        <div>
-          <dt>Metrô mais próximo</dt>
-          <dd>Estação Brigadeiro — Linha 2-Verde
-            <span class="gap" data-gap="confirmar a distância a pé">◇ confirmar</span></dd>
-        </div>
-      </dl>
 
       <div class="mapa">
         <iframe
@@ -522,7 +435,6 @@
     <nav class="rodape__nav" aria-label="Rodapé">
       <a href="#atendimento">Atendimento</a>
       <a href="#sobre">Sobre</a>
-      <a href="#consulta">A consulta</a>
       <a href="#consultorio">Consultório</a>
       <a href="#duvidas">Dúvidas</a>
       <a href="#contato">Contato</a>

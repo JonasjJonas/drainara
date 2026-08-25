@@ -218,46 +218,104 @@ h2 + p, h2 + .lead{ margin-top:1.1rem }
 .section--dark .plate figcaption{ color:#B3A791 }
 
 /* ==========================================================================
-   HERO
+   CAPA — foto do consultório em tela cheia, texto por cima
    ========================================================================== */
-.hero{ padding-block:clamp(3.5rem,8vw,7rem) clamp(4rem,8vw,7.5rem) }
-.hero__in{
-  display:grid; gap:clamp(2.5rem,5vw,4.5rem);
-  align-items:center;
+.hero{
+  position:relative;
+  isolation:isolate;
+  display:flex; align-items:flex-end;
+  min-height:clamp(560px, 86svh, 840px);
+  /* o topo precisa limpar a barra fixa, senão o texto passa por baixo dela */
+  padding-block:calc(5rem + clamp(1.5rem,5vw,3rem)) clamp(3rem,7vw,5.5rem);
+  background:var(--escuro-2);
+  color:#F6F2EA;
 }
-.hero__spec{
-  font-family:var(--serifa);
-  font-size:clamp(1.05rem,1.8vw,1.35rem);
-  font-style:italic;
-  color:var(--ouro-texto);
-  letter-spacing:.06em;
-  margin:.9rem 0 1.75rem;
-  padding-bottom:1.75rem;
-  border-bottom:var(--filete);
-  width:fit-content;
+.hero__foto{ position:absolute; inset:0; z-index:-2; overflow:hidden }
+.hero__foto img{
+  width:100%; height:100%;
+  object-fit:cover; object-position:50% 58%;
 }
-.hero h1{ margin-top:.2rem }
-.crm{
-  margin-top:1.6rem;
+/* Véu escuro: mais forte do lado do texto e no rodapé, para o contraste
+   não depender do que estiver na foto. No trecho onde o texto cai, a
+   opacidade nunca desce de .72 — o suficiente para AA com folga. */
+.hero::before{
+  content:''; position:absolute; inset:0; z-index:-1;
+  background:
+    linear-gradient(90deg,
+      color-mix(in srgb, var(--escuro-2) 90%, transparent) 0%,
+      color-mix(in srgb, var(--escuro-2) 80%, transparent) 48%,
+      color-mix(in srgb, var(--escuro-2) 42%, transparent) 100%),
+    linear-gradient(0deg,
+      color-mix(in srgb, var(--escuro-2) 55%, transparent) 0%,
+      transparent 45%),
+    linear-gradient(180deg,
+      color-mix(in srgb, var(--escuro-2) 78%, transparent) 0%,
+      transparent 24%);
+}
+.hero__in{ width:100%; max-width:1340px }
+.hero .kicker{ color:#DCBB7C; margin-bottom:1.6rem }
+.hero .kicker::before{ background:#DCBB7C }
+.hero h1{
+  max-width:14ch;
+  letter-spacing:-.025em;
+  text-shadow:0 1px 30px color-mix(in srgb, var(--escuro-2) 60%, transparent);
+}
+.hero .lead{
+  color:#DED5C6;
+  max-width:46ch;
+  margin-top:1.5rem;
+}
+.hero .actions{ margin-top:2.5rem }
+.hero__crm{
+  margin-top:2.75rem;
+  padding-top:1.5rem;
+  border-top:1px solid color-mix(in srgb, #DCBB7C 30%, transparent);
   font-size:var(--t-mini);
-  color:var(--tinta-fraca);
-  display:flex; flex-wrap:wrap; gap:.6rem 2rem;
+  letter-spacing:.14em; text-transform:uppercase;
+  color:#C7BCA9;
+  display:flex; flex-wrap:wrap; align-items:center; gap:.5rem;
+  max-width:none;
 }
-.crm > span{ display:inline-flex; align-items:center; gap:.55rem }
-.crm b{
-  font-weight:600; letter-spacing:.14em; text-transform:uppercase;
-  color:var(--tinta);
+.hero__ponto{ color:#8A7E6C }
+.hero .gap{
+  color:#F0A87C;
+  background:color-mix(in srgb, #C96A3C 22%, transparent);
+  border-color:color-mix(in srgb, #F0A87C 45%, transparent);
 }
-.hero__portrait .frame{ --ar:4/5; --foco:50% 20% }
+@media (max-width:640px){
+  .hero{ min-height:clamp(520px, 78svh, 680px) }
+  .hero h1{ max-width:none }
+}
 
-@media (min-width:900px){
-  .hero__in{ grid-template-columns:1.15fr .85fr }
-  .hero__portrait{ width:min(420px, 100%); margin-left:auto }
+/* Botões sobre a foto */
+.btn--claro{
+  background:#F6F2EA; color:var(--escuro-2);
+  border-color:#F6F2EA;
+}
+.btn--claro::before{ background:#DCBB7C }
+.btn--claro:hover,.btn--claro:focus-visible{
+  background:#F6F2EA; color:var(--escuro-2); border-color:#DCBB7C;
+}
+.btn--contorno{
+  background:none; color:#F6F2EA;
+  border-color:color-mix(in srgb, #F6F2EA 55%, transparent);
+}
+.btn--contorno::before{ background:#F6F2EA }
+.btn--contorno:hover,.btn--contorno:focus-visible{
+  background:none; color:var(--escuro-2); border-color:#F6F2EA;
 }
 
 /* ==========================================================================
-   TRÍPTICO — os três painéis da arte
+   ABERTURA DE SEÇÃO COM FOTO
    ========================================================================== */
+.abre{ display:grid; gap:clamp(2.5rem,5vw,4rem); margin-bottom:clamp(3rem,6vw,4.5rem) }
+.sec-head--flush{ margin-bottom:0 }
+@media (min-width:900px){
+  .abre{ grid-template-columns:1.25fr .75fr; align-items:center }
+  .abre__foto{ width:min(400px,100%); margin-left:auto }
+}
+.frame--retrato{ --ar:4/5; --foco:50% 20% }
+
 /* ==========================================================================
    AS DUAS FRENTES — sem imagem: hierarquia de tipo e filete fazem o trabalho
    ========================================================================== */
@@ -386,32 +444,6 @@ h2 + p, h2 + .lead{ margin-top:1.1rem }
 .formacao dd{ color:#C7BCA9 }
 
 /* ==========================================================================
-   A CONSULTA — sequência numerada, não cards
-   ========================================================================== */
-.passos{ counter-reset:passo; max-width:70rem }
-.passos > li{
-  counter-increment:passo;
-  display:grid; gap:.4rem 2rem;
-  padding:clamp(1.75rem,3vw,2.5rem) 0;
-  border-top:var(--filete);
-}
-.passos > li:last-child{ border-bottom:var(--filete) }
-.passos > li::before{
-  content:counter(passo,decimal-leading-zero);
-  font-family:var(--serifa);
-  font-size:1.5rem; font-style:italic; font-weight:300;
-  color:var(--ouro);
-  line-height:1;
-}
-.passos h3{ margin-bottom:.4rem }
-.passos p{ color:var(--tinta-fraca) }
-@media (min-width:760px){
-  .passos > li{ grid-template-columns:4rem 18rem 1fr; align-items:start }
-  .passos > li::before{ padding-top:.3rem }
-  .passos h3{ margin-bottom:0 }
-}
-
-/* ==========================================================================
    GALERIA DO CONSULTÓRIO
    ========================================================================== */
 .galeria{
@@ -420,9 +452,7 @@ h2 + p, h2 + .lead{ margin-top:1.1rem }
   margin-bottom:clamp(3.5rem,7vw,5.5rem);
 }
 @media (min-width:760px){
-  /* uma foto larga em cima e três retratos embaixo */
   .galeria{ grid-template-columns:repeat(3,1fr); align-items:start }
-  .plate--wide{ grid-column:1 / -1 }
 }
 @media (max-width:759px){ .galeria{ grid-template-columns:1fr } }
 
@@ -433,35 +463,10 @@ h2 + p, h2 + .lead{ margin-top:1.1rem }
    recepcao.jpg → mostra x≈134..693. A placa "Lavezzo & Takigami" começa em
      x≈715 e fica fora do quadro; por isso a legenda é "Entrada". Passar o
      --foco de 28% traz a placa de volta. */
-.frame--exames{ --ar:16/9; --foco:50% 55% }
 .frame--aparelhos{ --ar:4/5; --foco:50% 45% }
 .frame--lounge{ --ar:4/5; --foco:50% 50% }
 .frame--entrada{ --ar:4/5; --foco:24% 50% }
 
-/* ---------- informações práticas ---------- */
-.pratico{
-  display:grid; gap:0;
-  border-top:var(--filete);
-  margin-bottom:clamp(2.5rem,5vw,3.5rem);
-}
-@media (min-width:760px){ .pratico{ grid-template-columns:1fr 1fr; column-gap:4rem } }
-.pratico > div{
-  display:grid; gap:.4rem;
-  padding:1.15rem 0;
-  border-bottom:var(--filete);
-}
-@media (min-width:520px){
-  .pratico > div{ grid-template-columns:11rem 1fr; gap:1.25rem; align-items:baseline }
-}
-.pratico dt{
-  font-size:var(--t-mini); font-weight:600;
-  letter-spacing:.12em; text-transform:uppercase;
-  color:var(--ouro-texto);
-}
-.pratico dd{ color:var(--tinta-fraca) }
-
-/* Mapa: o embed do Google entra em escala de cinza para não brigar com a
-   paleta, e volta ao normal quando o visitante interage com ele. */
 .mapa{
   aspect-ratio:16/7;
   border:var(--filete);
@@ -856,3 +861,55 @@ h2 + p, h2 + .lead{ margin-top:1.1rem }
   font-size:clamp(1rem,1.5vw,1.15rem);
   line-height:1.5;
 }
+
+
+/* ==========================================================================
+   CABEÇALHO SOBRE A CAPA
+   Fica transparente enquanto a foto está atrás e vira barra sólida quando
+   a capa sai de cena. O véu de topo da .hero garante o contraste no claro.
+   ========================================================================== */
+.topbar{
+  position:fixed; top:0; left:0; right:0;
+  background:transparent;
+  backdrop-filter:none;
+}
+.topbar .brand__name{ color:#F6F2EA }
+.topbar .brand__role{ color:#DCBB7C }
+.topbar .nav a{ color:#E4DCCD }
+.topbar .nav a:hover,
+.topbar .nav a:focus-visible{ color:#fff }
+.topbar .nav a::after{ background:#DCBB7C }
+.topbar .burger span{ background:#F6F2EA }
+.topbar .btn--sm{
+  background:#F6F2EA; color:var(--escuro-2); border-color:#F6F2EA;
+}
+.topbar .btn--sm::before{ background:#DCBB7C }
+.topbar .btn--sm:hover,
+.topbar .btn--sm:focus-visible{ color:var(--escuro-2); background:#F6F2EA }
+
+.topbar.is-stuck,
+.topbar.is-aberto{
+  background:color-mix(in srgb, var(--pergaminho) 96%, transparent);
+  backdrop-filter:blur(10px);
+  border-bottom-color:color-mix(in srgb, var(--ouro) 30%, transparent);
+}
+.topbar.is-stuck .brand__name,
+.topbar.is-aberto .brand__name{ color:var(--tinta) }
+.topbar.is-stuck .brand__role,
+.topbar.is-aberto .brand__role{ color:var(--ouro-texto) }
+.topbar.is-stuck .nav a,
+.topbar.is-aberto .nav a{ color:var(--tinta-fraca) }
+.topbar.is-stuck .nav a:hover,
+.topbar.is-stuck .nav a:focus-visible{ color:var(--tinta) }
+.topbar.is-stuck .nav a::after,
+.topbar.is-aberto .nav a::after{ background:var(--ouro) }
+.topbar.is-stuck .burger span,
+.topbar.is-aberto .burger span{ background:var(--tinta) }
+.topbar.is-stuck .btn--sm,
+.topbar.is-aberto .btn--sm{
+  background:var(--tinta); color:var(--pergaminho); border-color:var(--tinta);
+}
+.topbar.is-stuck .btn--sm::before,
+.topbar.is-aberto .btn--sm::before{ background:var(--ouro-texto) }
+.topbar.is-stuck .btn--sm:hover,
+.topbar.is-stuck .btn--sm:focus-visible{ color:var(--pergaminho); background:var(--tinta) }

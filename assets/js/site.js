@@ -30,10 +30,12 @@
   const navMobile = document.getElementById('nav-mobile');
 
   if (burger && navMobile) {
+    const barra = document.querySelector('.topbar');
     const fechar = () => {
       burger.setAttribute('aria-expanded', 'false');
       burger.setAttribute('aria-label', 'Abrir menu');
       navMobile.hidden = true;
+      barra?.classList.remove('is-aberto');
     };
 
     burger.addEventListener('click', () => {
@@ -44,6 +46,7 @@
         burger.setAttribute('aria-expanded', 'true');
         burger.setAttribute('aria-label', 'Fechar menu');
         navMobile.hidden = false;
+        barra?.classList.add('is-aberto');
       }
     });
 
@@ -60,14 +63,14 @@
      3. Barra do topo ganha filete depois do primeiro scroll
      -------------------------------------------------------------- */
   const topbar = document.querySelector('.topbar');
-  if (topbar) {
-    const sentinela = document.createElement('div');
-    sentinela.style.cssText = 'position:absolute;top:0;height:1px;width:1px';
-    document.body.prepend(sentinela);
-
+  const capa = document.querySelector('.hero');
+  if (topbar && capa) {
+    // A troca acontece quando a capa termina, não no primeiro pixel de
+    // rolagem: enquanto a foto está atrás, a barra fica transparente.
     new IntersectionObserver(
-      ([entrada]) => topbar.classList.toggle('is-stuck', !entrada.isIntersecting)
-    ).observe(sentinela);
+      ([entrada]) => topbar.classList.toggle('is-stuck', !entrada.isIntersecting),
+      { rootMargin: '-72px 0px 0px 0px' }
+    ).observe(capa);
   }
 
   /* --------------------------------------------------------------

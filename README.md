@@ -50,20 +50,22 @@ preenchido — não precisa caçar no código.
 - [x] Endereço: Rua Maria Figueiredo, 595 — conjunto 83, Paraíso, São Paulo/SP
 - [x] Mapa do Google incorporado na página
 - [ ] Conferir o **CEP 04002-003** — veio da geolocalização do Google, não de você
-- [ ] Conferir o **metrô**: pelo mapa a estação Brigadeiro (Linha 2-Verde) é a
-      mais próxima; falta a distância a pé
-- [ ] Dias e horários de atendimento
-- [ ] Convênios atendidos (ou "apenas particular")
-- [ ] Estacionamento
-- [ ] Acessibilidade
-- [ ] Estação de metrô mais próxima
-- [ ] Iframe de incorporação do Google Maps
+- [ ] Dias e horários de atendimento — a lista de informações práticas
+      (convênios, estacionamento, acessibilidade, metrô) saiu da página a
+      pedido do cliente. Quando esses dados chegarem, vale reintroduzir só
+      os que estiverem preenchidos
 
 ### Conteúdo clínico
 - [x] Lista de procedimentos — agora é exatamente a que você mandou
 - [ ] "Microscopia": especular ou confocal?
 - [ ] Completar a lista de aparelhos (o "entre outros")
 - [ ] Resposta sobre convênios na seção de dúvidas
+
+### Capa
+- [ ] **Foto de capa em alta resolução.** Hoje a capa usa a `exames.jpg`, de
+      1280 px, esticada em tela cheia sob um véu escuro. Funciona, mas fica
+      macia em tela grande. Ideal: uma foto larga (2400 px+) da sala de
+      espera ou da recepção
 
 ### Fotos
 - [x] Retrato da Dra. Inara na capa (IMG_4739)
