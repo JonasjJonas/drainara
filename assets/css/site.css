@@ -223,8 +223,12 @@ h2 + p, h2 + .lead{ margin-top:1.1rem }
 .hero{
   position:relative;
   isolation:isolate;
-  display:flex; align-items:flex-end;
-  min-height:clamp(560px, 86svh, 840px);
+  display:flex; align-items:center;
+  /* tela cheia de verdade: sem teto, a dobra cai exatamente no fim da capa.
+     svh usa a altura estável do viewport, então o endereço do navegador
+     entrando e saindo no celular não faz a capa pular. */
+  min-height:100vh;
+  min-height:100svh;
   /* o topo precisa limpar a barra fixa, senão o texto passa por baixo dela */
   padding-block:calc(5rem + clamp(1.5rem,5vw,3rem)) clamp(3rem,7vw,5.5rem);
   background:var(--escuro-2);
@@ -283,9 +287,29 @@ h2 + p, h2 + .lead{ margin-top:1.1rem }
   border-color:color-mix(in srgb, #F0A87C 45%, transparent);
 }
 @media (max-width:640px){
-  .hero{ min-height:clamp(520px, 78svh, 680px) }
   .hero h1{ max-width:none }
 }
+
+/* Marca de rolagem: um fio com um brilho que desce, no canto oposto ao
+   CRM. Numa capa de tela cheia é o que avisa que a página continua. */
+.hero__rolar{
+  position:absolute; z-index:1;
+  right:var(--gutter); bottom:clamp(2rem,5vw,3.5rem);
+  width:1px; height:clamp(40px,7vh,64px);
+  background:color-mix(in srgb, #DCBB7C 28%, transparent);
+  overflow:hidden;
+}
+.hero__rolar::after{
+  content:''; position:absolute; inset:0;
+  background:linear-gradient(180deg, transparent, #DCBB7C);
+  transform:translateY(-100%);
+  animation:desce 2.6s var(--ease) infinite;
+}
+@keyframes desce{
+  0%{ transform:translateY(-100%) }
+  55%,100%{ transform:translateY(100%) }
+}
+@media (max-width:640px){ .hero__rolar{ display:none } }
 
 /* Botões sobre a foto */
 .btn--claro{
