@@ -33,12 +33,19 @@ preenchido — não precisa caçar no código.
       do número, e eu não quis chutar
 
 ### Sobre ela
-- [ ] Parágrafo de apresentação, escrito na voz dela
-- [ ] Graduação — faculdade e ano
-- [ ] Residência em oftalmologia — serviço e período
-- [ ] Especialização em oculoplástica — fellowship/curso, instituição e ano
+- [x] Texto de apresentação — no site como veio, com um único ajuste de
+      concordância ("às doenças de retina, **ao** envelhecimento das pálpebras")
+- [x] Graduação: Faculdade de Medicina de Petrópolis
+- [x] Residência médica: Instituto Suel Abujamra
+- [x] Especializações: Oftalmologia, Retina e Cirurgia Plástica Ocular —
+      Instituto Suel Abujamra, USP e UPO
 - [ ] Títulos e associações (CBO, SBCPO, SBO…)
 - [ ] Hospitais/centros cirúrgicos onde opera
+- [ ] **Retina entra no topo do site?** O texto dela diz "especialista em
+      cirurgia plástica ocular, retina e oftalmologia geral", mas o cabeçalho,
+      o menu e as duas frentes falam só de oftalmologia e blefaroplastia,
+      porque foram montados a partir da lista de procedimentos enviada antes.
+      Decidir se retina vira uma terceira frente e entra na assinatura
 
 ### Contato
 - [x] WhatsApp / telefone (11) 93045-5259 — os botões "Agendar" e a seção de
@@ -66,10 +73,11 @@ preenchido — não precisa caçar no código.
       dizer se essa menção fica ou sai também
 
 ### Capa
-- [ ] **Foto de capa em alta resolução.** Hoje a capa usa a `exames.jpg`, de
-      1280 px, esticada em tela cheia sob um véu escuro. Funciona, mas fica
-      macia em tela grande. Ideal: uma foto larga (2400 px+) da sala de
-      espera ou da recepção
+- [ ] **Trocar a foto de capa.** O arquivo `Foto Site Entrada.HEIC` foi enviado,
+      mas o macOS bloqueia o acesso do terminal à pasta Downloads (TCC), então
+      não consegui ler nem converter. Basta mover o arquivo para dentro do
+      projeto que eu sigo. Hoje a capa usa a `exames.jpg`, de 1280 px, esticada
+      em tela cheia sob um véu escuro
 
 ### Fotos
 - [x] Retrato da Dra. Inara na capa (IMG_4739)
