@@ -73,11 +73,9 @@ preenchido — não precisa caçar no código.
       dizer se essa menção fica ou sai também
 
 ### Capa
-- [ ] **Trocar a foto de capa.** O arquivo `Foto Site Entrada.HEIC` foi enviado,
-      mas o macOS bloqueia o acesso do terminal à pasta Downloads (TCC), então
-      não consegui ler nem converter. Basta mover o arquivo para dentro do
-      projeto que eu sigo. Hoje a capa usa a `exames.jpg`, de 1280 px, esticada
-      em tela cheia sob um véu escuro
+- [x] Foto da sala de espera na capa (`entrada.jpg`, 2000x1500)
+- [ ] Se quiser mais nitidez em monitor grande, passar o HEIC original para a
+      pasta do projeto — o que veio pelo chat já foi reduzido para 2000 px
 
 ### Fotos
 - [x] Retrato da Dra. Inara na capa (IMG_4739)
@@ -85,12 +83,10 @@ preenchido — não precisa caçar no código.
 - [x] Galeria: sala de exames vazia (lote antigo) e sala de imagem com ela
       (IMG_4796)
 - [x] Ilustrações removidas a pedido dela (visual mais limpo)
-- [ ] `exames.jpg`, `lounge.jpg` e `recepcao.jpg` são as versões reduzidas que
-      vieram pelo chat. A da sala de exames é a maior da página e a de menor
-      resolução: uma tomada nova da sala vazia resolveria (nas 136 fotos da
-      sessão não há nenhuma sem a Dra. Inara)
-- [ ] Decidir se a foto da recepção pode mostrar a placa "Lavezzo & Takigami"
-      — hoje ela está cortada fora do quadro
+- [x] Galeria refeita: sala de exames, exames de imagem e sala de espera
+- [x] `recepcao.jpg` removida — era o mesmo ambiente da capa, em resolução baixa
+- [ ] `exames.jpg` (1280 px) e `lounge.jpg` (1107 px) ainda são as versões
+      reduzidas que vieram pelo chat
 
 ### Antes de publicar de verdade
 - [ ] Remover a linha `<meta name="robots" content="noindex, nofollow">` do

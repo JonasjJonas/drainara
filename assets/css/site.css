@@ -237,7 +237,7 @@ h2 + p, h2 + .lead{ margin-top:1.1rem }
 .hero__foto{ position:absolute; inset:0; z-index:-2; overflow:hidden }
 .hero__foto img{
   width:100%; height:100%;
-  object-fit:cover; object-position:50% 58%;
+  object-fit:cover; object-position:50% 52%;
 }
 /* Véu escuro: mais forte do lado do texto e no rodapé, para o contraste
    não depender do que estiver na foto. No trecho onde o texto cai, a
@@ -246,11 +246,11 @@ h2 + p, h2 + .lead{ margin-top:1.1rem }
   content:''; position:absolute; inset:0; z-index:-1;
   background:
     linear-gradient(90deg,
-      color-mix(in srgb, var(--escuro-2) 90%, transparent) 0%,
-      color-mix(in srgb, var(--escuro-2) 80%, transparent) 48%,
-      color-mix(in srgb, var(--escuro-2) 42%, transparent) 100%),
+      color-mix(in srgb, var(--escuro-2) 84%, transparent) 0%,
+      color-mix(in srgb, var(--escuro-2) 72%, transparent) 48%,
+      color-mix(in srgb, var(--escuro-2) 38%, transparent) 100%),
     linear-gradient(0deg,
-      color-mix(in srgb, var(--escuro-2) 55%, transparent) 0%,
+      color-mix(in srgb, var(--escuro-2) 50%, transparent) 0%,
       transparent 45%),
     linear-gradient(180deg,
       color-mix(in srgb, var(--escuro-2) 78%, transparent) 0%,
@@ -490,9 +490,9 @@ h2 + p, h2 + .lead{ margin-top:1.1rem }
    recepcao.jpg → mostra x≈134..693. A placa "Lavezzo & Takigami" começa em
      x≈715 e fica fora do quadro; por isso a legenda é "Entrada". Passar o
      --foco de 28% traz a placa de volta. */
+.frame--exames{ --ar:4/5; --foco:50% 55% }
 .frame--aparelhos{ --ar:4/5; --foco:50% 45% }
 .frame--lounge{ --ar:4/5; --foco:50% 50% }
-.frame--entrada{ --ar:4/5; --foco:24% 50% }
 
 .mapa{
   aspect-ratio:16/7;

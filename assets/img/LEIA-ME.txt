@@ -13,44 +13,41 @@ Assim dá para reenquadrar mudando um número, sem reexportar nada.
 AS FOTOS
 --------
 
+entrada.jpg             2000x1500 — sala de espera, com a entrada ao fundo.
+     É a FOTO DE CAPA, em tela cheia, sob um véu escuro.
+     .hero__foto img { object-position:50% 52% }
+     O vidro do elevador, à esquerda, tem a marca "Lavezzo" gravada. Ela
+     cai na parte mais escura do véu e não fica legível — mas se um dia o
+     véu for aliviado, confira esse canto antes.
+
 dra-inara-retrato.jpg   1600x1200 — original IMG_4739.
      Abre a seção "Atendimento". Retrato frontal na mesa.
      .frame--retrato { --ar:4/5; --foco:50% 20% }
 
 dra-inara-sobre.jpg     1400x1865 — original IMG_4702.
-     Seção escura "Sobre a Dra. Inara". De jaleco, junto à estante de
-     livros do consultório.
+     Seção escura "Sobre a Dra. Inara". De jaleco, junto à estante.
      ESTA É A ÚNICA JÁ RECORTADA NO ARQUIVO, em 3:4, para fechar o
      enquadramento nela: só reposicionar o --foco deixava a Dra. Inara
      pequena e jogada para a direita, porque a janela 3:4 mostra apenas
      56% da largura de uma foto 4:3.
      Recorte aplicado sobre o original de 5712x4284:
          x 1021..3549   y 343..3710   (2528 x 3367)
-     Como o arquivo já vem na proporção da janela, o CSS não corta nada:
      .plate--sobre .frame { --ar:3/4; --foco:50% 50% }
-     Para refazer com outro enquadramento, veja "PARA RECORTAR" abaixo.
 
 exames.jpg              1280x960 — sala de exames vazia.
-     Agora é a FOTO DE FUNDO DA CAPA, em tela cheia, sob um véu escuro.
-     .hero__foto img { object-position:50% 58% }
-     Está em resolução baixa para o tamanho que ocupa. Funciona porque o
-     véu esconde boa parte da perda, mas é a primeira que eu trocaria:
-     uma foto larga e nítida da sala de espera ou da sala de exames
-     deixaria a capa muito melhor.
+     Primeira foto da galeria do consultório.
+     .frame--exames { --ar:4/5; --foco:50% 55% }
 
 aparelhos.jpg           1600x1200 — original IMG_4796.
      Sala dos exames de imagem, com os dois aparelhos e os diplomas.
      .frame--aparelhos { --ar:4/5; --foco:50% 45% }
 
-lounge.jpg              1107x714 — sala de espera. Veio das imagens
-     anexadas na conversa, em resolução menor que as outras.
+lounge.jpg              1107x714 — sala de espera, terceira da galeria.
      .frame--lounge { --ar:4/5; --foco:50% 50% }
 
-recepcao.jpg            1084x712 — mesmo ambiente, outro ângulo, também
-     em resolução menor. A placa "Lavezzo & Takigami" começa em x≈715 e
-     fica fora do quadro; por isso a legenda é "Entrada".
-     .frame--entrada { --ar:4/5; --foco:24% 50% }
-     ATENÇÃO: passar o --foco de 28% traz a placa de volta.
+A recepcao.jpg foi removida: era um segundo ângulo da mesma sala de
+espera, em resolução baixa, e a capa agora mostra esse ambiente melhor.
+Ela continua no histórico do git se fizer falta.
 
 
 PARA TROCAR UMA FOTO
@@ -82,8 +79,7 @@ Para recorte com origem exata, use um script de canvas ou o Preview.app
 
 AINDA VALE MELHORAR
 -------------------
-A pasta "Cliente 02- Inara Contin" saiu do Downloads, então hoje só existem
-os seis arquivos desta pasta. Para a capa ficar nítida em tela grande é
-preciso uma foto de pelo menos 2400 px de largura — de preferência da sala
-de espera ou da recepção, que é o tipo de imagem de ambiente que abre bem
-uma home. Basta salvar por cima de exames.jpg, com o mesmo nome.
+A entrada.jpg veio pelo chat, que reduz as imagens para 2000 px. O original
+("Foto Site Entrada.HEIC") é maior. Em tela cheia, 2000 px já se comporta
+bem, mas o original renderia mais nitidez em monitor grande — vale trocar
+se conseguir passar o arquivo direto para a pasta do projeto.
