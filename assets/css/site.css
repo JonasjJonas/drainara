@@ -854,6 +854,33 @@ h2 + p, h2 + .lead{ margin-top:1.1rem }
 }
 
 
+/* ---------- Nota sob o mapa: link para o perfil do Google ---------- */
+.mapa__nota{
+  display:flex; flex-wrap:wrap; align-items:baseline; gap:.4rem 1.1rem;
+  max-width:none;
+  margin-top:1.1rem;
+  font-size:.9375rem;
+  color:var(--tinta-fraca);
+}
+.mapa__link{
+  font-family:var(--sans);
+  font-size:var(--t-mini); font-weight:600;
+  letter-spacing:.14em; text-transform:uppercase;
+  color:var(--ouro-texto);
+  text-decoration:none;
+  display:inline-flex; align-items:center; gap:.55rem;
+  padding-bottom:.15rem;
+  border-bottom:1px solid color-mix(in srgb, var(--ouro) 45%, transparent);
+  transition:color var(--transicao), border-color var(--transicao);
+}
+.mapa__link::after{
+  content:'→';
+  font-size:1rem; letter-spacing:0;
+  transition:transform var(--transicao);
+}
+.mapa__link:hover{ color:var(--tinta); border-color:var(--tinta) }
+.mapa__link:hover::after{ transform:translateX(3px) }
+
 /* ---------- Endereço clicável ---------- */
 .endereco{
   text-decoration:none;
