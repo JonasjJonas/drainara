@@ -48,8 +48,11 @@ preenchido — não precisa caçar no código.
       Decidir se retina vira uma terceira frente e entra na assinatura
 
 ### Contato
-- [x] WhatsApp / telefone (11) 93045-5259 — os botões "Agendar" e a seção de
-      contato abrem a conversa no WhatsApp com mensagem pronta
+- [x] WhatsApp / telefone (11) 93045-5259 — os três pontos de agendamento
+      (botão do topo, botão da capa e a linha do contato) abrem a conversa com
+      a mensagem pronta: "Olá! Vim pelo site e gostaria de agendar uma consulta
+      com a Dra. Inara." O "vim pelo site" serve de rastreio de origem: dá para
+      medir quanto do agendamento vem daqui sem precisar de ferramenta nenhuma
 - [x] E-mail: inaraoftalmogia@gmail.com
 - [x] Instagram: [@drainaracontin](https://www.instagram.com/drainaracontin/)
 - [ ] **Conferir a grafia do e-mail.** Está no site exatamente como veio:
