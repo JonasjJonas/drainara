@@ -16,6 +16,13 @@ AS FOTOS
 entrada.jpg             2000x1500 — sala de espera, com a entrada ao fundo.
      É a FOTO DE CAPA, em tela cheia, sob um véu escuro.
      .hero__foto img { object-position:50% 52% }
+     No celular o valor muda para 10% 52%, numa media query. A janela do
+     celular tem proporção ~0,46 e a foto é 4:3 deitada, então aparecem só
+     693 dos 2000 px de largura. Recortar o arquivo não resolve: como o
+     corte usa a altura inteira, a fatia visível tem sempre essa largura —
+     muda só ONDE ela cai. Em 10% o quadro pega as poltronas, o tapete e o
+     corredor da entrada, e deixa de fora a TV, que é um retângulo aceso
+     e ficava bem atrás do título.
      O vidro do elevador, à esquerda, tem a marca "Lavezzo" gravada. Ela
      cai na parte mais escura do véu e não fica legível — mas se um dia o
      véu for aliviado, confira esse canto antes.

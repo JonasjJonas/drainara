@@ -48,7 +48,7 @@ preenchido — não precisa caçar no código.
       Decidir se retina vira uma terceira frente e entra na assinatura
 
 ### Contato
-- [x] WhatsApp / telefone (11) 93045-5259 — os três pontos de agendamento
+- [x] WhatsApp (11) 93045-5259 — os três pontos de agendamento
       (botão do topo, botão da capa e a linha do contato) abrem a conversa com
       a mensagem pronta: "Olá! Vim pelo site e gostaria de agendar uma consulta
       com a Dra. Inara." O "vim pelo site" serve de rastreio de origem: dá para
