@@ -62,18 +62,16 @@ preenchido — não precisa caçar no código.
 ### Consultório
 - [x] Endereço: Rua Maria Figueiredo, 595 — conjunto 83, Paraíso, São Paulo/SP
 - [x] Mapa do Google incorporado na página
-- [ ] Conferir o **CEP 04002-003** — veio da geolocalização do Google, não de você
-- [x] Link para o perfil do Google, logo abaixo do mapa
-- [ ] **Trocar pelo link curto do perfil.** Hoje o link é uma busca do Maps
-      pelo nome dela (`maps/search/?api=1&query=...`), que é estável e sem
-      rastreadores, mas não é o perfil em si. O link definitivo sai do botão
-      "Compartilhar" do Perfil da Empresa no Google: um endereço
-      `maps.app.goo.gl/...`
-- [ ] **Conferir o endereço no perfil do Google.** Uma busca por ela devolve
-      um consultório na Avenida Angélica, 2447, cj. 81, Higienópolis, com o
-      mesmo WhatsApp. Se o perfil ainda estiver com esse endereço, o link vai
-      mandar paciente para o lugar errado — precisa ser atualizado para a
-      Rua Maria Figueiredo antes de o site sair do rascunho
+- [x] CEP 04002-003 — confirmado pelo cartão do próprio perfil dela no Google
+- [x] Link e mapa apontam para o Perfil da Empresa no Google, pelo CID
+      `0xbfa3eecd7478d5cf` (decimal 13809143448637855183). O pino mostra
+      "Dra. Inara Contin Rassi - Oftalmologista", não um endereço genérico
+- [x] Endereço do perfil conferido: já está na Rua Maria Figueiredo. A
+      Avenida Angélica que aparecia em diretórios é registro antigo
+- [ ] O cartão do mapa exibe a nota do Google (5,0, 2 avaliações). É a
+      interface do próprio Google, não conteúdo publicado por nós — mas se
+      ela preferir não exibir nota nenhuma, dá para voltar o mapa para a
+      busca por endereço, que não mostra
 - [ ] Dias e horários de atendimento — a lista de informações práticas
       (convênios, estacionamento, acessibilidade, metrô) saiu da página a
       pedido do cliente. Quando esses dados chegarem, vale reintroduzir só
