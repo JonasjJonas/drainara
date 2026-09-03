@@ -486,6 +486,20 @@ h2 + p, h2 + .lead{ margin-top:1.1rem }
 }
 .formacao dd{ color:#C7BCA9 }
 
+/* Listas dentro da ficha de formação (experiência, hospitais) */
+.rol{ margin-top:.55rem }
+.rol li{
+  position:relative;
+  padding:.3rem 0 .3rem 1.1rem;
+  line-height:1.55;
+}
+.rol li::before{
+  content:'';
+  position:absolute; left:0; top:1em;
+  width:5px; height:1px;
+  background:#DCBB7C;
+}
+
 /* ==========================================================================
    GALERIA DO CONSULTÓRIO
    ========================================================================== */

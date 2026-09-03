@@ -39,8 +39,12 @@ preenchido — não precisa caçar no código.
 - [x] Residência médica: Instituto Suel Abujamra
 - [x] Especializações: Oftalmologia, Retina e Cirurgia Plástica Ocular —
       Instituto Suel Abujamra, USP e UPO
-- [ ] Títulos e associações (CBO, SBCPO, SBO…)
-- [ ] Hospitais/centros cirúrgicos onde opera
+- [x] Títulos: Especialista em Oftalmologia pelo CBO
+- [x] Experiência: HCFMUSP, Beneficência Portuguesa, preceptoria no IPS
+- [x] Onde opera: Albert Einstein (Perdizes e Morumbi), Beneficência
+      Portuguesa / BP Mirante, H Olhos e Mira Hospital Oftalmológico
+- [ ] **Abrir a sigla "IPS"** na linha de preceptoria. Sozinha ela não diz
+      nada para o paciente, e não achei a que instituição corresponde
 - [ ] **Retina entra no topo do site?** O texto dela diz "especialista em
       cirurgia plástica ocular, retina e oftalmologia geral", mas o cabeçalho,
       o menu e as duas frentes falam só de oftalmologia e blefaroplastia,
@@ -79,7 +83,9 @@ preenchido — não precisa caçar no código.
 
 ### Conteúdo clínico
 - [x] Lista de procedimentos — agora é exatamente a que você mandou
-- [ ] Resposta sobre convênios na seção de dúvidas
+- [x] Convênios: atendimento particular, com nota fiscal para reembolso
+- [x] Saiu a pergunta "Blefaroplastia é estética ou o convênio cobre?" a
+      pedido da médica. O FAQ foi de 6 para 5 perguntas
 - [ ] O bloco "Aparelhos do consultório" saiu a pedido do cliente. O parágrafo
       de Oftalmologia ainda cita tomografia de coerência óptica e microscopia;
       dizer se essa menção fica ou sai também
