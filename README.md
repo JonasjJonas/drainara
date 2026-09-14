@@ -35,11 +35,11 @@ preenchido — não precisa caçar no código.
 ### Sobre ela
 - [x] Texto de apresentação — no site como veio, com um único ajuste de
       concordância ("às doenças de retina, **ao** envelhecimento das pálpebras")
-- [x] Graduação: Faculdade de Medicina de Petrópolis
-- [x] Residência médica: Instituto Suel Abujamra
+- [x] Graduação removida a pedido dela (da página e dos dados estruturados)
+- [x] Residência médica: pelo MEC e CBO, no Instituto Suel Abujamra
 - [x] Especializações: Oftalmologia, Retina e Cirurgia Plástica Ocular —
       Instituto Suel Abujamra, USP e UPO
-- [x] Títulos: Especialista em Oftalmologia pelo CBO
+- [x] Títulos: Especialista em Oftalmologia pelo CBO e pelo MEC
 - [x] Experiência: HCFMUSP, Beneficência Portuguesa, preceptoria no IPS
 - [x] Onde opera: Albert Einstein (Perdizes e Morumbi), Beneficência
       Portuguesa / BP Mirante, H Olhos e Mira Hospital Oftalmológico
